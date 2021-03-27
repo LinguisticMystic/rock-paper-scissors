@@ -61,11 +61,7 @@ class Game
 
     private function checkTied(): bool
     {
-        if ($this->playerOneMove === $this->playerTwoMove) {
-            return true;
-        } else {
-            return false;
-        }
+        return ($this->playerOneMove === $this->playerTwoMove);
     }
 
     private function checkWinner(): void
